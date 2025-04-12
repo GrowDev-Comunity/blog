@@ -1,7 +1,7 @@
 +++
 date = '2025-04-12T18:24:15+07:00'
 title = 'First Posts'
-description = "Halo sobat Grown! Selamat datang di blog GrownDev!"
+description = "Halo sobat Grown! Selamat datang di blog GrowDev!"
 image = '/images/plant.jpg'
 tags = ["grown"]
 toc = false

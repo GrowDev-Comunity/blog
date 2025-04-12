@@ -5,4 +5,4 @@ toc = false
 image = "https://avatars.githubusercontent.com/u/185679296"
 +++
 
-Halo sobat Grown! Selamat datang di GrownDevBlog!
+Halo sobat Grown! Selamat datang di GrowDevBlog!
