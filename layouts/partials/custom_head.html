@@ -1,0 +1,7 @@
+{{ if .Params.image }}
+{{- $imgSrc := .Params.image -}}
+{{- if hasPrefix $imgSrc "/" -}}
+  {{- $imgSrc = printf "%s%s" .Site.BaseURL (strings.TrimPrefix "/" $imgSrc) -}}
+{{- end -}}
+<meta name="og:image" content="{{$imgSrc | safeURL}}">
+{{ end }}
