@@ -3,5 +3,5 @@
 {{- if hasPrefix $imgSrc "/" -}}
   {{- $imgSrc = printf "%s%s" .Site.BaseURL (strings.TrimPrefix "/" $imgSrc) -}}
 {{- end -}}
-<meta name="og:image" content="{{$imgSrc | safeURL}}">
+<meta property="og:image" content="{{$imgSrc | safeURL}}">
 {{ end }}
