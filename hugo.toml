@@ -23,7 +23,7 @@ theme = "tailwind"
     poweredby = true
 
   [params.giscus]
-    enabled = false
+    enabled = true
     repo = "GrowDev-Comunity/blog"
     repoID = "R_kgDOOYankg"
     category = "Announcements"
