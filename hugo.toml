@@ -22,6 +22,19 @@ theme = "tailwind"
     since = 2025
     poweredby = true
 
+  [params.giscus]
+    enabled = false
+    repo = "GrowDev-Comunity/blog"
+    repoID = "R_kgDOOYankg"
+    category = "Announcements"
+    categoryID = "DIC_kwDOOYanks4CpCfj"
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    lang = "id"
+
 [menu]
 
   [[menu.main]]
