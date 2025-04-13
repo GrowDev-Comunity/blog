@@ -1,6 +1,6 @@
 {{ if .Site.Config.Services.Disqus.Shortname }}
   {{ template "_internal/disqus.html" . }}
-{{ else if .Site.Params.giscus.enabled }}
+{{ else if and (.Site.Params.giscus.enabled) (ne .Params.commentsEnable false)  }}
   {{ with .Site.Params.giscus }}
 <script type="text/javascript">
   (function() {
