@@ -42,14 +42,13 @@
   <!-- or otherwise simply load the URL -->
   {{- else -}}
 
-  {{/*  }}
-  {{- $imgSrc := .Params.image -}}
-  {{- if hasPrefix $imgSrc "/" -}}
-    {{- $imgSrc = printf "%s%s" .Site.BaseURL (strings.TrimPrefix "/" $imgSrc) -}}
-  {{- end -}}
-  {{ */}}
+  {{ $imageSrc := .Params.image }}
+  {{ with resources.Get $imageSrc }}
+    {{ $imageSrc = .RelPermalink }}
+  {{ end }}
+
   <figure>
-    <img class="w-full object-cover h-36 md:h-48 xl:h-60" src="{{ .Params.image | safeURL }}"
+    <img class="w-full object-cover h-36 md:h-48 xl:h-60" src="{{ $imageSrc | safeURL }}"
       alt="{{ $alt }}" title="{{ $alt }}"
       loading="lazy"
     >
