@@ -53,12 +53,6 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      # Verify built files
-      - name: Debug - Check public directory
-        run: |
-          echo "Contents of public/images:"
-          ls -la public/images/
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
